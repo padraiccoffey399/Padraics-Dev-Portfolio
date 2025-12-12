@@ -1,3 +1,55 @@
 body {
-    background-color: blue;
+    background-color: grey;
+    padding: 0px;
+    margin: 0px;
+}
+
+.welcome {
+    padding: 0px;
+    height: 40em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.textBox {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    border-image: linear-gradient(to right, transparent, darkblue, transparent) 1;  
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.highlights {
+    background-color: aqua;
+}
+
+.hcontainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui.card {
+  width: 300px;
+  height: 400px;
+  overflow: hidden; 
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.ui.card .image img {
+    width: 100%;
+    height: auto;
+}
+
+title {
+    text-align: center;
 }
