@@ -26,6 +26,12 @@ h1 {
     font-size: 4em;
 }
 
+h2 {
+    padding-top: 70px;
+    font-size: 3em;
+    z-index: 10;
+}
+
 .slantedTop {
     background-color: white;
     transform: skewY(14deg);
@@ -33,31 +39,35 @@ h1 {
 
 .highlights {
     background-color: white;
-    clip-path: polygon(0 120px, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 120px,100% 0,100% calc(100% - 120px),0% 100%);
+
 }
 
 
 
 .hcontainer {
-    padding-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 200px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
 .ui.card {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   overflow: hidden; 
   border: 1px solid lightgray;
   background-color: white;
   border-radius: 8px;
+  margin-left:15px;
+  margin-right: 15px;
 }
 
 
 .ui.card .image img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
   display: block;
 }
