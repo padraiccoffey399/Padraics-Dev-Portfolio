@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid black;
-    border-image: linear-gradient(to right, transparent, darkblue, transparent) 1;  
+    border-image: linear-gradient(to right, transparent, black, transparent) 1;  
 }
 
 h1 {
