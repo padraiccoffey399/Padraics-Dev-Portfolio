@@ -1,7 +1,15 @@
+.iceberg-regular {
+  font-family: "Iceberg", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body {
     background-color: grey;
     padding: 0px;
     margin: 0px;
+    font-family: "Iceberg", Arial, Helvetica, sans-serif;
 }
 
 .ui.menu {
@@ -93,3 +101,4 @@ h2 {
 title {
     text-align: center;
 }
+
