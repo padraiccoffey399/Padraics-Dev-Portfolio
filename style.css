@@ -64,7 +64,6 @@ h2 {
 .highlights {
     background-color: white;
     clip-path: polygon(0 120px,100% 0,100% calc(100% - 120px),0% 100%);
-
 }
 
 
@@ -94,6 +93,28 @@ h2 {
   height: 300px;
   object-fit: cover;
   display: block;
+}
+
+.profilePicture {
+    padding-top: 30px;
+    padding-left:50px;
+    padding-bottom: 20px;
+
+}
+
+.aboutMe {
+    padding-left: 50px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.aboutMeText {
+    padding-left: 30px;
+    font-size: 2em;
+}
+
+.aboutMeHead .textBox h2 {
+    padding:0px;
 }
 
 
