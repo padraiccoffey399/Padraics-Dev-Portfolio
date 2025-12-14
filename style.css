@@ -4,6 +4,22 @@ body {
     margin: 0px;
 }
 
+.ui.menu {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+}
+
+.ui.menu .right.menu {
+    margin-left:auto;
+}
+.ui.menu .item {
+    font-size: 1.5em;
+    padding:10px;
+    color: white;
+}
+
 .welcome {
     padding: 0px;
     height: 40em;
