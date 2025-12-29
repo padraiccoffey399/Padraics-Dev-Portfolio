@@ -65,6 +65,7 @@ h2 {
 
 h3 {
     font-size: 2em;
+
 }
 
 .slantedTop {
@@ -167,5 +168,4 @@ title {
 
 .java .bar .progress {
     width: 50%;
-    padding: 0px;
 }
