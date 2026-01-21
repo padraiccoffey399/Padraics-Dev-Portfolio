@@ -144,6 +144,7 @@ h3 {
 
 .aboutMeText {
     padding-left: 30px;
+    padding-right: 20px;
     font-size: 2em;
 }
 
@@ -177,15 +178,15 @@ title {
 /*------Skill Levels Adjustments ------------- */
 
 .java .bar .progress {
-    width: 60%;
-}
-.Python .bar .progress {
-    width: 30%;
-}
-.Csh .bar .progress {
     width: 50%;
 }
+.Python .bar .progress {
+    width: 15%;
+}
+.Csh .bar .progress {
+    width: 40%;
+}
 .HTML .bar .progress {
-    width: 45%;
+    width: 37%;
 }
 /*------Skill Levels Adjustments ------------- */
