@@ -4,162 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Dev</title>
+
+    <!-- Fomantic UI -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+
+    <!-- Your Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
-
-    
 </head>
-    <body>
-        <div class="ui menu">
 
-            <div class="right menu">
-                <a class="item" href = "projects.html">Projets</a>
-                <a class="item">About Me</a>
-                <a class="item">3</a>
-                <a class="item">4</a>
-                <a class="item">2</a>
-            </div>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="custom-menu">
+        <div class="right menu">
+            <a class="item" href="projects.html">Projects</a>
+            <a class="item">About Me</a>
+            <a class="item">3</a>
+            <a class="item">4</a>
+            <a class="item">2</a>
         </div>
-        <div class="welcome">
-            <div class="textBox">
-                <h1>Hi I am Padraic Coffey</h1>
-            </div>
+    </div>
+
+    <!-- WELCOME SECTION -->
+    <div class="welcome">
+        <div class="textBox">
+            <h1>Hi I am Padraic Coffey</h1>
         </div>
+    </div>
 
-        <!-- /* Highlights Section --------------------------------------------------------------------------------------- */ -->
-
-        <div class="highlights">
-            <div class="textBox">
+    <!-- HIGHLIGHTS SECTION -->
+    <div class="highlights">
+        <div class="textBox">
             <h2>Highlights</h2>
-            </div>
-                     <!-- /* 1st Section --------------------------------------------------------------------------------------- */ -->
+        </div>
 
-            <div class="hcontainer">
-                <div class="ui card">
-                    <div class="image">
-                        <img src="/images/bhetter anomaly sc.png"> 
-                    </div>
-                    <div class="content">
-                        <a class="header">Zombie Escape Shooter</a>
-                            <div class="textBox"></div>
-                        <div class="meta">
+        <div class="ui three stackable cards hcontainer">
+
+            <!-- CARD 1 -->
+            <div class="ui card">
+                <div class="image">
+                    <img src="/images/bhetter anomaly sc.png">
+                </div>
+                <div class="content">
+                    <div class="header">Zombie Escape Shooter</div>
+                    <div class="meta">
                         <span class="date">Created for Nov 17th 2025</span>
-                          <div class="textBox"></div>
-                        </div>
-                        <div class="description">
-                        A 2D top down Zombie Shooter game made in Unity using C#. a simple side scroller game
-                         that i made for a game jam on my own. 
-                        </div>
                     </div>
-                    <div class="extra content">
-                        <a>
-                        <i class="user icon"></i>
-                        1 Person
-                        </a>
+                    <div class="description">
+                        A 2D top down Zombie Shooter game made in Unity using C#. A simple side scroller game
+                        that I made for a game jam on my own.
                     </div>
                 </div>
-                <!-- /* 2nd Section --------------------------------------------------------------------------------------- */ -->
+                <div class="extra content">
+                    <i class="user icon"></i> 1 Person
+                </div>
+            </div>
 
-                 <div class="ui card">
-                    <div class="image">
-                        <img src="/images/download.jpg"> 
-                    </div>
-                    <div class="content">
-                        <a class="header">Krisdwty</a>
-                          <div class="textBox"></div>
-                        <div class="meta">
+            <!-- CARD 2 -->
+            <div class="ui card">
+                <div class="image">
+                    <img src="/images/download.jpg">
+                </div>
+                <div class="content">
+                    <div class="header">Krisdwty</div>
+                    <div class="meta">
                         <span class="date">Joined in 2013</span>
-                          <div class="textBox"></div>
-                        </div>
-                        <div class="description">
-                        Kristy is an art director living in New York.
-                        </div>
                     </div>
-                    <div class="extra content">
-                        <a>
-                        <i class="user icon"></i>
-                        22 Friends
-                        </a>
+                    <div class="description">
+                        Kristy is an art director living in New York.
                     </div>
                 </div>
-                <!-- /* 3rd Section --------------------------------------------------------------------------------------- */ -->
+                <div class="extra content">
+                    <i class="user icon"></i> 22 Friends
+                </div>
+            </div>
 
-                <div class="ui card">
-                    <div class="image">
-                        <img src="/images/download.jpg"> 
-                    </div>
-                    <div class="content">
-                        <a class="header">Kristy</a>
-                        <div class="meta">
+            <!-- CARD 3 -->
+            <div class="ui card">
+                <div class="image">
+                    <img src="/images/download.jpg">
+                </div>
+                <div class="content">
+                    <div class="header">Kristy</div>
+                    <div class="meta">
                         <span class="date">Joined in 2013</span>
-                        </div>
-                        <div class="description">
+                    </div>
+                    <div class="description">
                         Kristy is an art director living in New York.
-                        </div>
-                    </div>
-                    <div class="extra content">
-                        <a>
-                        <i class="user icon"></i>
-                        22 Friends
-                        </a>
                     </div>
                 </div>
+                <div class="extra content">
+                    <i class="user icon"></i> 22 Friends
+                </div>
             </div>
+
         </div>
-        <!-- /* Brief About Me Section --------------------------------------------------------------------------------------- */ -->
-        <div class="aboutMeHead">
-            <div class="textBox">
-                <h2> A bit about me!</h2>
-            </div>
+    </div>
+
+    <!-- ABOUT ME HEADER -->
+    <div class="aboutMeHead">
+        <div class="textBox">
+            <h2>A bit about me!</h2>
         </div>
-        <div class="aboutMe">
-            <div class="profilePicture">
-                <img src="https://preview.redd.it/v26alalxnd581.png?width=320&crop=smart&auto=webp&s=797d0675b4d72114d8519b36f6170ae9e238a3cc" alt="Profile picture">
-            </div>
-            <div class="aboutMeText">
-            <p> My name is Padraic Coffey, and I’m a 20-year-old student currently 
-                in my second year at South East Technological University (SETU) in Waterford, Ireland. studying <b>Computer Science (Game Development) (SE600)</b>. I’m 
-                originally from Portlaw, Co. Waterford, and Im currently working part-time as a butcher 
-                in Fresh Food Courtyard Dungarvan. <br> <br> Some of my hobbies include <b>video games, surfing, skating, and airsoft.</b>
-                and ive been playing <b>D&D</b> for about 3 Years now. my favorite game of all time is either <b>Kingdom Come Deliverance II</b>
-                or <b>Mordhau</b>, yes i do have a soft spot for medieval games. I have a passion for game development and aspire to become 
-                a game developer in the future.
-            </p3>
-            </div>
-         </div>
-         <div class="skills">
-            <div class="textBox">
-            <h2>Highlights </h2>
-            </div>
-            <div class="vcontainer">
-                <div class="ui progress java">
-                    <h3>Java </h3>
-                    <div class="bar">
-                        <div class="progress"></div>
-                    </div>
-                </div>
-                <div class="ui progress Csh">
-                    <h3>C#</h3>
-                    <div class="bar">
-                        <div class="progress"></div>
-                    </div>
-                </div>
-                <div class="ui progress Python">
-                    <h3>Python</h3>
-                    <div class="bar">
-                        <div class="progress"></div>
-                    </div>
-                </div><div class="ui progress HTML">
-                    <h3>HTML</h3>
-                    <div class="bar">
-                        <div class="progress"></div>
-                    </div>
-                </div>
-                
-            </div>
+    </div>
+
+    <!-- ABOUT ME SECTION -->
+    <div class="aboutMe">
+        <div class="profilePicture">
+            <img src="https://preview.redd.it/v26alalxnd581.png?width=320&crop=smart&auto=webp&s=797d0675b4d72114d8519b36f6170ae9e238a3cc">
         </div>
-    </body>
+
+        <div class="aboutMeText">
+            <p>
+                My name is Padraic Coffey, and I’m a 20-year-old student currently in my second year at South East
+                Technological University (SETU) in Waterford, Ireland, studying <b>Computer Science (Game Development)
+                (SE600)</b>. I’m originally from Portlaw, Co. Waterford, and I'm currently working part-time as a butcher
+                in Fresh Food Courtyard Dungarvan.
+                <br><br>
+                Some of my hobbies include <b>video games, surfing, skating, and airsoft.</b> I've been playing <b>D&D</b>
+                for about 3 years now. My favorite game of all time is either <b>Kingdom Come Deliverance II</b> or
+                <b>Mordhau</b>. I have a passion for game development and aspire to become a game developer in the future.
+            </p>
+        </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <div class="skills">
+        <div class="textBox">
+            <h2>Highlights</h2>
+        </div>
+
+        <div class="vcontainer">
+
+            <div class="ui progress java">
+                <h3>Java</h3>
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <div class="ui progress Csh">
+                <h3>C#</h3>
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <div class="ui progress Python">
+                <h3>Python</h3>
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <div class="ui progress HTML">
+                <h3>HTML</h3>
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
 </html>
