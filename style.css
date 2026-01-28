@@ -43,7 +43,7 @@ body {
 }
 
 h1 { font-size: 4em; }
-h2 { font-size: 3em; padding-top: 70px; }
+h2 { font-size: 3em; padding-top: 70px !important; }
 h3 { font-size: 2em; }
 
 /* ANGLED SECTIONS */
@@ -66,9 +66,15 @@ h3 { font-size: 2em; }
     align-items: center;
 }
 
-/* FOMANTIC CARD OVERRIDES */
+.ui.fluid.container {
+    padding-left: 110px !important;
+    padding-right: 40px !important;
+}
+
+
 .ui.card {
-    width: 400px !important;
+    max-width: 400px !important;
+    width: 100% !important;
     height: 500px !important;
     border-radius: 8px !important;
     overflow: hidden !important;
@@ -77,6 +83,7 @@ h3 { font-size: 2em; }
     margin-left: 15px !important;
     margin-right: 15px !important;
 }
+
 
 .ui.card .image img {
     height: 300px !important;
