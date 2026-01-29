@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Post-Processing Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+    <body>
+        <div class="custom-menu">
+            <div class="right menu">
+                <a class="item" href = "../projects.html">Projects</a>
+                <a class="item">About Me</a>
+                <a class="item">3</a>
+                <a class="item">4</a>
+                <a class="item">2</a>
+            </div>
+        </div>
+        <div class="ui container project-content">
+            
+            <div class="textBox">
+                <h2>Basic Post-Processing Demo</h2>
+            </div>
+           <br>
+            <img src="../images/Terrain Exp.png" class="float-right" style="width: 800px;">
+
+            <p>
+                This Small Project demonstrates my understanding of Unity's Post-Processing tools. we were tasked to
+                make terrain with some basic effects around it, this image here shows what I had done to create the terrain.
+                I used the terrain tools to sculpt hills and valleys, then I textured it using various textures like grass, rock and dirt.
+                also being versed in the Maps like Normal Base and height maps helped my understanding of Game Dev.
+                It was all made in Unity Universal 3D Pipeline URP.
+            </p>
+
+            <p>
+               I’ve also learned how to use colour grading and colour curves to enhance the atmosphere of 
+               different areas in the game. For example, when the player enters a water zone like in the video I trigger
+                a post‑processing effect that adds a subtle vignette and shifts the colour balance toward blue. This 
+                creates a clear visual cue that the player is underwater and helps reinforce the overall mood and 
+                immersion.
+            </p>
+            <img src="../images/PP inspector0.png" class="float-left" style="width: 300px;">
+            <img src="../images/terraining.png" class="float-right" style="width: 400px;">
+            <p>
+                We were given height maps and textures to work with in class, but something I found especially interesting was the
+                 ability to pull real‑world height maps from anywhere on the planet. For the mountain in my project, I used 
+                 a site called terraining.com, which lets you download terrain data from actual locations. I chose Mount 
+                 Vesuvius in Italy and then exaggerated the height values to make the peak more dramatic and visually
+                 striking.
+            </p>
+    
+            <h2>Video</h2>
+            <p>
+                this short clip is a demonstration of the post-processing effects I applied to the terrain and underwater area
+                along with some nice depth of field affects and colour grading to enhance the visual apeal
+            </p>
+            <video controls class="full-video">
+                <source src="../videos/PP test.mp4" type="video/webm">
+                <source src="../videos/stillPP.mp4" type="video/x-matroska">
+                Your browser does not support MKV playback.
+            </video>
+
+            <p>
+                I learned alot form this project, especially in terms of Visuals and how it can change a scene 
+                from being empty to feeling alive.
+            </p>
+            <h2> Mechanics</h2>
+            <p>
+                I used the built in unity terrain tool to place trees and grass onto the terrain which utilize 
+                LOD and billboarding to reduce the performance impact if there were too many trees in the Scene.
+            </p>
+            <p>
+                the textures all have maps and even go through ambient occlusion to give them more depth and realism.
+            </p>
+            <p> 
+                I also changed the skybox as i wanted to learn how to do that for future projects.
+            </p>
+            <video controls class="full-video">
+                <source src="../videos/stillPP.mp4" type="video/webm">
+                <source src="../videos/stillPP.mp4" type="video/x-matroska">
+                Your browser does not support MKV playback.
+            </video>
+        </div>
+        
+    </body>
+</html>
