@@ -27,76 +27,68 @@
         <div class="ui container project-content">
             
             <div class="textBox">
-                <h2>Tilvania</h2>
+                <h2>Tilevania</h2>
             </div>
             <br>
-            <img src="../images/bhetter anomaly sc.png" class="float-right" style="width: 500px;">
+            <img src="../images/Tilevania/Tilevania Enemy.png" class="float-right" style="width: 500px;">
 
             <p>
-                Zombie Escape Shooter is a 2D top‑down zombie survival game created for a 48‑hour game jam.
-                Developed using Unity and C#, I was trying to make a "space-invaders" style game but with zombies and having 
-                a 360-degree shooting mechanic. The player just walks along the road trying to outrun the anomaly that 
-                spawbns zombies. The player has to shoot the zombies to survive as long as possible, while i havent added some
-                mechanics like ammo pickups or health pickups yet, the game is still in a basic state.
+                Tilevania was a Project we had to make for the end of Semester 2 in the 2D Game Development Module. the module had use making This
+                basic 2D game and at the end we had to put everything we learned together while also adding a feature of our own. in the final project
+                I had a player with health and death with respawn. enemies to attack the player, ( basically just goombas from mario ), spikes 
+                to also injure the player a tilemap to build the map and levels with animations, coins and finally my addition ROPES.
             </p>
 
             <p>
-                Here is a snapshot of the gameplay. i had designed some basic sprites for the player and walls plus the anomaly using
-                a software called GIMP. and other sprites i used from creators and unity asset store packs. like the road which i head
-                infinitly tiled and moved backto make it look like the player is moving forward.
+                I chose to add ropes becasue I always loved grappeling hooks and swinging in games. its just so much fun. i was wondering how i wanted
+                to approach this and then after some reaserach i came across a method. i created segments for the rope and they were all glued to eachother
+                while still having a pivot point, after applying 2d physics to it, it swang naturally like a noraml rope. how i made the player grab it is another story
             </p>
-            <img src="../images/SpriteTests.png" class="float-left" style="width: 500px;">
             <p>
-                This small project helped me enforce my knowledge of Sprites using sprite sheets as shown here on the left.
-                This Sprite is the player character idle, shooting and walking animations all in one sprite sheet. I used Unity's built in
-                animator to create the animation states and transitions between them. I also created the zombie enemy using a similar sprite sheet as shown on the right.
-                and a very basic enemy system that follows the player and with their own health and damage.
-                I unfortunatly came last in this Game Jam but I enjoyed it nonetheless and learned a lot about game development in a short amount of time.
-                and I look forward to improving my skills further in the future.
+               The Player has a collider already so all i did was give each rope segment a collider too with a trigger, and when the player triggers
+               the collider it creates a "FixedPoint2D" component on the player to the specific Rope segement, there is a video explaining how it works
+               along with the code further down.
             </p>
-            <img src="../images/AnomalyJam.png" class="float-left" style="width: 500px;">
+            <img src="../images/Tilevania/TilevaniaSwing.png" class="float-left" style="width: 320px;">
+            <p>
+                The Ropes i added was also because there was little movement mechanics other than jump and climb. i was considering doing a dash but i felt
+                rope swinging would be more fun for the player. a video I had used for inspiration was a video on vines by "<b>Julia's Games</b>" <a href = "https://youtu.be/_6Jq1wliUVQ">https://youtu.be/_6Jq1wliUVQ</a>
+                this guided me in the right direction and i adapted it to my game which helped alot.
+            </p>
+
+            <p>
+                We were able to create a tilemap with a sprite sheet we used with tile rules that made creating each level easier.
+                i ran into a lot of bugs in the game and learned how to fix them, like launching off of the rope too fast, i feel this project has leveled up my
+                knowledge of game dev. 
+            </p>
+            <img src="../images/Tilevania/TilemapTilevania.png" class="float-right" style="width: 500px;">
             <h2>Video and Troubles</h2>
-            <p>
-                this short clip is a demonstration of the testing i did myself and some of the problems i ran into
-                like the zombies not going in right direction, them spawning too much, and movement being incorrect.
-                this is somthing I really enjoy happening, seeing things break unexpectedly and trying to fix them.
-            </p>
-            <p>
-                in this video you can also see some test sprites i had in early development before i made the final ones.
-                like initially having a "beer" sprite as the bullet. (which I later realised I forgot to change in the final version
-                but no one noticed). also the Zombies were just the player Sprite while i was getting them to work
-                and just swapped them out.
+            <p class = "textBox">
+                This video is a clip of my final demonstration and annotation to my lecturer about the game in its final state. showing all the 
+                mechanics and features
+            </p >
+            <video controls class="full-video">
+                <source src="../videos/TilevaniaAnnotated.mp4" type="video/webm">
+                <source src="../videos/TilevaniaAnnotated.mp4" type="video/x-matroska">
+                Your browser does not support MKV playback.
+            </video>
+            <p class = "textBox">
+                And below is the video i made to explain this feature by showing inspector and the code. 
             </p>
             <video controls class="full-video">
-                <source src="../videos/mess.mkv" type="video/webm">
-                <source src="../videos/mess.mkv" type="video/x-matroska">
+                <source src="../videos/TilevaniaExplained.mp4" type="video/webm">
+                <source src="../videos/TilevaniaExplained.mp4" type="video/x-matroska">
                 Your browser does not support MKV playback.
             </video>
 
-            <p>
+            <p class = "text">
                 I learned alot form this project, especially in terms of vectors and movement in Unity using C# scripts.
-                and also working under a 48 hour time limit, which was a challenge but also a fun experience.
-            </p>
-            <h2> Mechanics</h2>
-            <p>
-                the bullets in the game were programmed by creating a vector from the player character to the 
-                mouse position on click, and then moving that bullet along that vector.
+                and overall i believe i graded a 93% in this module
             </p>
             <p>
-                the zombies were programmed to follow the player character by also doing the same with the vector but moving
-                more slowly and updating every frame to be constantly looking at the player by rotating the object towards the player
-
+                <br>
             </p>
-            <p> 
-                the road Sprite was made to infinitely tile by having two copies of the road sprite moving downwards
-                and when one goes off screen it resets to the top, creating an infinite scrolling effect.
-            </p>
-            <p>
-                Colliders handeld player health and damage to each objects, but also limiting the playermovement to
-                within the borders
-            </p>
-            <img src="../images/StatsZombie.png" class="float-left" style="width: 100%;">
-
+            
         </div>
         
     </body>
