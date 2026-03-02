@@ -156,6 +156,19 @@ ul li {
     font-weight: 500;
 }
 
+.normal-list {
+    list-style: disc !important;
+    padding-left: 40px !important;
+    display: block !important;
+}
+
+.normal-list li {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 6px;
+}
+
 
 .skill-bar {
     width: 70%;
@@ -179,7 +192,7 @@ ul li {
 
 /* Skill tiers */
 .skill.primary .fill {
-    width: 70%;
+    width:70%;
 }
 
 .skill.proficient .fill {

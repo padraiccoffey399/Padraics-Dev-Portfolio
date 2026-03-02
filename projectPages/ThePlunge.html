@@ -25,25 +25,26 @@
         <div class="ui container project-content">
             <h2>The Plunge</h2>
             <br>
-            <img src="../images/Tilevania/Tilevania Enemy.png" class="float-right" style="width: 500px;">
+            <img src="../images/ThePlunge/CoverImage.png" class="float-right" style="width: 500px;">
             <p> I’m really happy with how this game turned out, especially considering how I came up with the idea. 
                 The jam I joined was the Portfolio Builders Jam #60, and there wasn’t any reward or prize I just 
                 wanted the pressure and a clear timeframe to push myself. The theme of the jam was <b>Take the Plunge </b>,
-                 and the first things that came to mind were water and fear. But I wanted to stand out, so I thought
-                  outside the box and came up with a plunger. From there, the idea evolved into this superhero‑like
-                   weapon where you literally take The Plunge, the plunger itself being called The Plunge 
-                   because of how legendary it is.
+                and the first things that came to mind were water and fear. But I wanted to stand out, so I thought
+                outside the box and came up with a plunger. From there, the idea evolved into this superhero‑like
+                weapon where you literally take The Plunge, the plunger itself being called The Plunge 
+                because of how legendary it is.
 
             </p>
             <p> 
                 for basics i wanted essential mechanics in the game. that would set the foundation of the game i set out to complete these throughout the week 
             </p>
-                <ul>
+                <ul class = "normal-list">
                     <li>Establish essential core mechanics to form the foundation of the game.</li>
                     <li>Allow the player to control how hard or fast they throw <em>The Plunge</em>.</li>
                     <li>Implement a basic arcade-style high-scoring system for a self-defined goal.</li>
                     <li>Add a “Quality of Stick” attribute to the plunger to make gameplay more dynamic.</li>
                 </ul>
+            <img src="../images/ThePlunge/green.png" class="float-left" style="width: 550px;">
 
             <p>I  wanted to take on this extra challenge because I wanted to become more confident with angles and vectors in Unity, as that was my main focus for 
                 this jam. The programming was challenging, but I got the hang of it in the end. Right now, the most difficult part of Unity for me personally is the Player Input system 
@@ -51,7 +52,7 @@
                 A few bugs appeared during development, such as the plunger not instantiating where it was supposed to, but all of those issues were fixed in the end.
 
             </p>
-
+            <img src="../images/ThePlunge/TP_Explain.png" class="float-left" style="width: 350px;">
             <p> I also learned a lot about Persistance in this Jam, as it was my first time trying to maintain data from different scenes, throughout the
                 proccess of this project i didnt structure my scripts too well and when i went on to implament persistance i had to redesign my 
                 Session Manager Script and create a new PersistanceManager script, this taught me about persistance across scenes in unity    
@@ -61,6 +62,7 @@
                   for this project. The only file I created personally was the narration at the beginning of the 
                   game, which I produced using a voice changer.
             </p>
+                <img src="../images/ThePlunge/Basic.png" class="float-right" style="width: 700px;" >
             <h2>Video and Troubles</h2>
             <p class = "textBox">
                 This Video was a first test of some of the plunger throwing, but as you can see some things werent working as expected.
@@ -75,7 +77,9 @@
                 This was later tweaked because, no matter what power you applied to the plunger, it would always 
                 end up in the same position, making it impossible for the player to score from certain distances. 
                 This happened because Force and Torque scaled linearly and in parallel. I later changed them so they
-                scaled slightly differently from each other, allowing the player to score from anywhere.
+                scaled slightly differently from each other, allowing the player to score from anywhere. This code snippet
+                is from an earlier version of the Attack method.
+                <img src="../images/ThePlunge/CodeofAttack.png" class="float-right" style="width: 500px;" >
             </p>
             <video controls class="full-video">
                 <source src="../videos/ThePlungeStrength.mp4" type="video/webm">
