@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniature Mayhem</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="custom-menu">
+        <div class="right menu">
+            <a class="item" href="../index.html">Home</a>
+            <a class="item" href="../projects.html">Projects</a>
+            <a class="item" href="../aboutMe.html">About Me</a>
+            <a class="item" href="../CV.html">CV</a>
+        </div>
+    </div>
+
+    <div class="ui container project-content">
+
+        <div class="textBox">
+            <h2>Miniature Mayhem</h2>
+        </div>
+
+        <br>
+
+        <img src="../images/MiniatureMayhem/overview.png"
+        class="float-right"
+        style="width: 700px;">
+
+        <p>
+            Miniature Mayhem is a stealth-survival game where the player controls a rat trapped
+            inside a backyard garden. The objective is to escape by scratching through a weak fence
+            panel while avoiding the Owner who patrols the area repairing destroyed objects.
+            The player must use distractions and environmental interactions to create opportunities
+            to escape without being stomped or caught.
+        </p>
+
+        <p>
+            The interactable objects in the game were designed using a reusable modular system.
+            Each object contains a clean “before” state and a damaged “after” state. When the
+            player interacts with an object, it swaps between these states using switch cases and
+            object tags. The same system was also adapted for the escape fence and repair mechanics.
+        </p>
+
+        <p>
+            The Owner enemy uses Unity NavMesh pathfinding to patrol and chase the player.
+            A FIFO queue system was implemented so the AI could prioritise repairing broken
+            objects while still being able to interrupt tasks if the player was spotted.
+        </p>
+
+        <img src="../images/MiniatureMayhem/someOwnerCode.png"
+        class="float-left"
+        style="width: 350px;">
+        <img src="../images/MiniatureMayhem/someOwnerCode2.png"
+        class="float-left"
+        style="width: 350px;">
+
+
+        <h2>AI & Gameplay Improvements</h2>
+
+        <p>
+            In the expanded version of the project, I improved the enemy AI behaviour by adding
+            scheduled patrol checks around the escape gate. This prevented the player from hiding
+            in one place for the entire game and helped create more suspense during gameplay.
+        </p>
+
+        <p>
+            The player uses Unity’s input system alongside interaction prompts to break objects,
+            distract the Owner, and progress towards the escape condition.
+        </p>
+
+        <p>
+            The game also includes a health system where repeated attacks from the Owner will
+            eventually cause the player to lose and restart the level.
+        </p>
+
+    
+
+        <h2>Optimization</h2>
+
+        <p>
+            Optimization became a larger focus during development. The grass in the environment
+            was created using terrain tree meshes which caused a high draw count and impacted
+            performance heavily.
+        </p>
+
+        <p>
+            To improve performance, I reduced the density of these objects and implemented
+            occlusion culling throughout the level. This reduced the amount of unnecessary
+            rendering and helped the project run more smoothly overall.
+        </p>
+        
+        <img src="../images/MiniatureMayhem/occlusionCulling.png"
+        class="float-right"
+        style="width: 500px;">
+        <img src="../images/MiniatureMayhem/statsOfGame.png"
+        class="float-right"
+        style="width: 500px;">
+
+        <h2>Environment & Visual Design</h2>
+
+        <p>
+            The environment was originally built using Unity Terrain tools with slight elevation
+            changes to avoid a flat appearance. Various textures and foliage assets were used to
+            create a believable backyard setting.
+        </p>
+
+        <p>
+            Later in development, I experimented with converting sections of the environment
+            into ProBuilder geometry to test a more modular workflow. If I revisited the project,
+            I would likely prototype the environment fully in ProBuilder before finalising assets.
+        </p>
+
+    
+
+        <h2>Audio Integration</h2>
+
+        <p>
+            Audio was one of the weakest aspects of the original submission, so I focused on
+            improving it in the expanded version. After learning about spatial blend in class,
+            I implemented positional audio into several interactable objects including the
+            sprinkler and hose.
+        </p>
+
+        <p>
+            The Owner’s footsteps were also converted to spatial audio and Unity’s Audio Mixer
+            system was introduced to separate music, ambience, effects, and interactables into
+            their own channels for better control and balancing.
+        </p>
+
+        <h2>UI & Player Guidance</h2>
+
+        <p>
+            The game already contained a custom-painted health bar and timer system, but I further
+            improved player guidance by adding popup interaction prompts when approaching objects.
+        </p>
+
+        <p>
+            To direct players toward the escape gate, I replaced a large immersion-breaking red
+            arrow with environmental “yellow paint” guidance inspired by techniques commonly used
+            in modern games.
+        </p>
+
+        <img src="../images/MiniatureMayhem/UIMayhem.png"
+        class="float-right"
+        style="width: 500px;">
+
+        <h2>Testing & Iteration</h2>
+
+        <p>
+            Throughout development I repeatedly playtested the project to identify bugs and
+            polish issues. Small fixes such as correcting UI hierarchy problems helped improve
+            the overall quality and presentation of the game.
+        </p>
+
+        <p>
+            I also allowed close friends to test the game without instruction. They were able
+            to understand the objectives naturally which showed that the gameplay flow and
+            player guidance systems were effective.
+        </p>
+
+        <h2>Challenges Encountered</h2>
+
+        <p>
+            Several technical challenges were encountered during development. NavMesh obstacles
+            had to be configured carefully to prevent the AI from colliding with interactable
+            objects.
+        </p>
+
+        <p>
+            The rat model sourced online included a rig but lacked a run animation, so I created
+            one manually using keyframes and direct bone manipulation. I also experimented with
+            retargeting animations from another rig but was unsuccessful.
+        </p>
+
+        <p>
+            Another issue involved scene buttons not correctly interacting with my singleton
+            GameManager system. This was resolved by creating intermediary scripts within each
+            scene that communicated with the GameManager directly.
+        </p>
+
+
+        <h2>Video Showcase</h2>
+
+        <p class="textBox">
+            Gameplay demonstration of Miniature Mayhem.
+        </p>
+
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/ud4ozeq-YG8"
+                title="Miniature Mayhem Video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div> 
+
+        <p class="textBox">
+            This second video demonstrates some of the AI behaviour and interaction systems
+            used throughout the project.
+        </p>
+
+       <h2>Video Showcase</h2>
+
+        <p class="textBox">
+            Gameplay demonstration of Miniature Mayhem.
+        </p>
+
+        <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/FFBynBCNJAA"
+            title="Miniature Mayhem Gameplay"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+        <h2>Conclusion</h2>
+
+        <p>
+            Overall, Miniature Mayhem evolved significantly throughout development through
+            improvements in AI behaviour, optimization, audio design, player feedback, and
+            general polish.
+        </p>
+
+        <p>
+            The project helped strengthen my understanding of Unity systems including NavMesh,
+            audio management, modular interaction systems, optimization techniques, and player
+            experience design.
+        </p>
+
+        <p>
+            here are some links to the <b>original version</b> of the project and the <b>expanded version</b> of the project Design Document if you want to check them out.
+            <a href="MiniatureMayhemOriginal0.html" style="color: blue; text-decoration: underline;">Original Version</a>
+            <br>
+            <a href="MiniatureMayhemOriginal1.html" style="color: blue; text-decoration: underline;">Expanded Version</a>
+        </p>
+
+        <br>
+
+    </div>
+
+</body>
+</html>
